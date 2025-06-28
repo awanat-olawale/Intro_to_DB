@@ -24,7 +24,7 @@ try:
         # for i in books:
         #     print (i)
     
-except Exception as e:
+except mysql.connector.Error as e:
     print(f"Error while connecting to MySQL: {e}")
 
 finally:
