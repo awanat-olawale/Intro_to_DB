@@ -14,7 +14,7 @@ CREATE TABLE Books (
     author_id INT, 
     price DOUBLE,
     publication_date DATE,
-    FOREIGN KEY(author_id) REFERENCES Authors(author_id)
+    FOREIGN KEY (author_id) REFERENCES Authors(author_id)
 );
 
 -- Creates a table for Customers which stores information about customers.
@@ -30,7 +30,7 @@ CREATE TABLE Orders (
     order_id INT PRIMARY KEY,
     customer_id INT,
     order_date DATE,
-    FOREIGN KEY(customer_id) REFERENCES Customers(customer_id)
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id)
 );
 
 -- Creates a table for Order_Details which stores information about the books included in each order.
